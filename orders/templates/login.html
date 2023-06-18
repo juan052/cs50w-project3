@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Luxx Art</title>
+        <link rel="stylesheet" href="static/css/login.css">
+    </head>
+    <body>
+        <style>
+        .login-box {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+    </style>
+        <section class="login-box">
+            <img src="http://www.pinocchiospizza.net/images/pinocchio_72.gif"
+                class="avatar" alt="Avatar Image" width="30%">
+            <h1>Iniciar sesion</h1>
+            <form method="post" action="/validar">
+                <!-- USERNAME INPUT -->
+
+                <label for="username"></label>
+                <input type="text" name="usuario" placeholder="Ingrese su Email">
+                <!-- PASSWORD INPUT -->
+                <label for="password">Contraseña</label>
+                <input type="password" name="contraseña"
+                    placeholder="Ingresar contraseña">
+                <input type="submit" value="Log In">
+
+                <input type="text" name="usuario" placeholder="Ingrese su Email"
+                    hidden>
+
+                <input type="text" name="usuario" placeholder="Ingrese su Email"
+                    hidden>
+                <a href="#">Has olvidado tu contraseña?</a><br>
+                <a href="/registrar">Registrar Usuario?</a>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Luxx Art</title>
+        <link rel="stylesheet" href="static/css/login.css">
+    </head>
+    <body>
+        <section class="login-box">
+            <img src="http://www.pinocchiospizza.net/images/pinocchio_72.gif"
+                class="avatar" alt="Avatar Image" width="30%">
+            <h1>Registrar</h1>
+            <form method="post" action="/validar">
+                <!-- USERNAME INPUT -->
+                <label for="username">Nombres</label>
+                <input type="text" name="nombres" required>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" required>
+                <label for="username">Usuario</label>
+                <input type="text" name="usuario" required>
+                <!-- PASSWORD INPUT -->
+                <label for="password">Contraseña</label>
+                <input type="password" name="contraseña" required>
+                <input type="submit" value="Registrase">
+
+                <a href="/login">Ya tienes una cuenta?</a>
+            </form>
+        </section>
+    </body>
+</html>
